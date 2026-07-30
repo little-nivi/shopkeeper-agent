@@ -11,7 +11,7 @@ from app.agent.nodes.validate_sql import validate_sql
 from app.agent.nodes.execute_sql import execute_sql
 from typing import Any
 """
-本次未添加任何东西，仅为测试pr功能进行
+本次未添加任何东西，仅为测试pr
 """
 def build_query_graph(service: Any = None):
     workflow = StateGraph(QueryState)
