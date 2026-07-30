@@ -1,0 +1,52 @@
+# === AI/ML 项目通用 .gitignore ===
+
+# 模型权重（这些文件通常几百MB到几GB，千万不要提交！）
+*.bin
+*.pt
+*.pth
+*.onnx
+*.safetensors
+*.gguf
+*.model
+*.h5
+*.pb
+
+# Docker 中的 Embedding 模型目录（重点！）
+docker/embedding/bge-large-zh-v1.5/
+
+# 数据集
+data/
+dataset/
+*.csv
+*.jsonl
+*.parquet
+*.arrow
+
+# 向量数据库索引文件
+*.faiss
+*.index
+
+# Python 缓存和虚拟环境
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+env/
+
+# 环境变量（可能包含密钥，绝对不能提交！）
+.env
+.env.*
+
+# IDE 配置
+.vscode/
+.idea/
+*.swp
+
+# 日志文件
+logs/
+*.log
+
+# 系统文件
+.DS_Store
+Thumbs.db
