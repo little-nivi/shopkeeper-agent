@@ -1,0 +1,46 @@
+
+logging:
+  file:
+    enable: true
+    level: INFO
+    path: logs
+    rotation: "10 MB"
+    retention: "7 days"
+  console:
+    enable: true
+    level: INFO
+
+db_meta:
+  host: localhost
+  port: 3306
+  user: didilili
+  password: dili123
+  database: meta
+
+db_dw:
+  host: localhost
+  port: 3306
+  user: didilili
+  password: dili123
+  database: dw
+
+qdrant:
+  host: localhost
+  port: 6333
+  embedding_size: 1024
+
+embedding:
+  host: localhost
+  port: 8081
+  model: bge-large-zh-v1.5
+
+elasticsearch:
+  host: localhost
+  port: 9200
+
+llm:
+  provider: deepseek
+  api_key: sk-0dc550ac1d05478899bd52e550af0bd7
+  model: deepseek-v4-flash
+  base_url: https://api.deepseek.com
+  temperature: 0.1
